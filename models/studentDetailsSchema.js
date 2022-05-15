@@ -7,6 +7,7 @@ const studentDetailsSchema = mongoose.Schema({
         unique: true,
     },
     imageURL: String,
+    numberOfCourses: Number,
     // selectedFile: String,
     createdAt: {
         type: Date,

@@ -4,7 +4,7 @@ import { getStudentDetails, createStudentDetails, findStudentDetails, deleteStud
 
 const router = express.Router();
 
-router.get('/', getStudentDetails);
+router.get('/:id', getStudentDetails);
 router.post('/', createStudentDetails);
 router.patch('/', findStudentDetails);
 router.delete('/:id', deleteStudentDetails);
