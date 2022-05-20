@@ -36,6 +36,7 @@ export const createCourseDetails = async (req, res) => {
             );
         }
 
+
         await newPostMessage.save();
         res.status(201).json(newPostMessage);
 
